@@ -1,0 +1,117 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    background-color:rgb(255, 255, 255);
+    min-height:100vh;
+}
+.container{
+    position: relative;
+    width:100%;
+    filter: blur(5px);
+    overflow: hidden;
+    height:100vh;
+}
+.bubbles
+{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    margin: 0 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: rgb(112, 97, 97);
+    box-shadow:0 0 0 10px #423939,
+    0 0 50px #3f3838,
+    0 0 100px #000000;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(650s/var(--i));
+}
+@keyframes animate {
+    
+ 0%{
+    transform: translateY(100vh)scale(1);
+
+ }
+ 100%
+ {
+    transform: translateY(0vh)scale(0) ;
+ }
+
+}
+
+.formtext{
+    position:absolute;
+    left:365px;
+    top: 100px;
+    width:300px;
+    height:400px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    border-radius:5px;
+    animation:animate2 3s infinite;
+}
+
+input
+{
+    outline: none;
+    border:none;
+    padding:5px;
+    border-bottom: solid black 1px;
+     background: white;
+}
+button{
+    padding:5px;
+}
+textarea{
+    padding:25px;
+    background:white;
+    outline:none;
+}
+.black{
+    background-color:rgb(0, 0, 0);
+    color:white;
+    animation:animate2 3s infinite;
+    text-decoration: solid;
+}
+
+@keyframes animate2
+{
+    0%{
+        border-color:white;
+    }
+    25%{
+        border-color:rgb(0, 0, 0);
+    }
+    50%{
+        border-color:white;
+    }
+    75%{
+        border-color:rgb(0, 0, 0);
+    }
+    100%{
+        border-color:rgb(255, 250, 250);
+    }
+
+}
+::selection
+{
+    background-color:black;
+    color:white;
+}
+details{
+    background-color: #000000;
+    color:white;
+    text-align: center;
+    width:100%;
+    position: fixed;
+    left:0;
+    bottom:0;
+}

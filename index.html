@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Contact-form</title>
+</head>
+<body>
+    <div class="container">
+     <div class="bubbles">
+        <span style="--i:10"></span>
+        <span style="--i:20"></span>
+        <span style="--i:30"></span>
+        <span style="--i:45"></span>
+        <span style="--i:30"></span>
+        <span style="--i:10"></span>
+        <span style="--i:28"></span>
+        <span style="--i:25"></span>
+        <span style="--i:35"></span>
+        <span style="--i:55"></span>
+        <span style="--i:40"></span>
+        <span style="--i:13"></span>
+        <span style="--i:29"></span>
+        <span style="--i:42"></span>
+        <span style="--i:24"></span>
+        <span style="--i:31"></span>
+        <span style="--i:17"></span>
+        <span style="--i:10"></span>
+        <span style="--i:45"></span>
+        <span style="--i:37"></span>
+        <span style="--i:67"></span>
+        <span style="--i:37"></span>
+        <span style="--i:59"></span>
+        <span style="--i:11"></span>
+        <span style="--i:28"></span>
+        <span style="--i:10"></span>
+     </div>
+    </div>
+    
+    <button style="position: absolute;top:30px;left:492px;" onclick="theme()">Theme</button> 
+<div class="formtext">
+   <form action="#">
+    <br>
+    <br>
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" placeholder="Enter your name" id="name"title="Enter your name" pattern="[a-zA-z]{3,}"required>
+    <br>
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" placeholder="Enter your email" id="email"title="Enter your Email" pattern="[a-zA-Z]{2,}[0-9]*[@][a-z]+[.][c][o][m]"required>
+    <br>
+    <br>
+    <br>
+    <label for="email">Feedback:</label>
+    <br>
+    <br>
+    <textarea placeholder="Type your query/feedback" title="Enter your feedback"required></textarea>
+   <br>
+   <br>
+   <br>
+    <button>Submit</button>
+</form>
+</div>
+<div class="footer">
+    <details>
+        <summary>
+            Made with 🤍
+        </summary>
+        <p>By Shevy</p>
+    </details>
+</div>
+    <script>
+        function theme()
+        {
+            var element=document.body;
+            element.classList.toggle('black');
+        }
+    </script>
+</body>
+</html>
